@@ -1,0 +1,28 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Routes through express",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UNF-Web-Frameworks/assignment-2-jacieankrom.git"
+  },
+  "author": "n01418656",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UNF-Web-Frameworks/assignment-2-jacieankrom/issues"
+  },
+  "homepage": "https://github.com/UNF-Web-Frameworks/assignment-2-jacieankrom#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.10.2",
+    "nodemon": "^2.0.13"
+  }
+}

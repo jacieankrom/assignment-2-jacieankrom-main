@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <!-- <script src="[call js]" defer ></script>-->
+    </head>
+    <body>
+        <div class="w3-content" style="max-width:1400px">
+            <h1>This is your help page!</h1>
+            <div style="background-color:skyblue;">
+           <h3>GET /Users</h3>
+            </div>
+            <div style="background-color:beige;">
+                <p>No parameters</p><br>
+                <p>Description: Array of Users</p><br>
+                <p>Media type: application/json</p><br>
+                <p>Example Value:<img src="../img/snippit.png" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                
+            </div>
+        </div>
+
+        <div class="w3-content" style="max-width:1400px">
+            <div style="background-color: lightcoral;">
+           <h3>POST /Users</h3>
+            </div>
+            <div style="background-color:beige;">
+                <p>No parameters</p><br>
+                <p>Description: Creates a new user</p><br>
+                <p>Request body: <color:red>required</color:red></p><br>
+                <p>Example Value:<img src="../img/POSTusers.jpg" alt="example"></p><br>
+                
+            </div>
+        </div>
+
+        <div class="w3-content" style="max-width:1400px">
+            <div style="background-color: lightgreen;">
+           <h3>GET /Users/{userId}</h3>
+            </div>
+            <div style="background-color:beige;">
+                <p>Description: Returns the specified user object</p><br>
+                <p>Parameters: <color:red>Required*</color:red> userId of the object you are trying to retrieve </p><br>
+                <p>Returns: (Code 200) Returns the User object with the matching userId</p><br>
+                <p>Example Value:<img src="../img/GETusersId.jpg" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                <p>Returns: (Code 404) User not found</p><br>
+                <p>Example Value:<img src="../img/GETuserMes.jpg" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                
+            </div>
+        </div>
+
+        <div class="w3-content" style="max-width:1400px">
+            <div style="background-color: lightsteelblue;">
+           <h3>PATCH /Users/{userId}</h3>
+            </div>
+            <div style="background-color:beige;">
+                <p>Description: Updates an existing user, any properties of the user object should be updated.</p><br>
+                <p>Parameters: <color:red>Required*</color:red> userId of the object you are trying to retrieve </p><br>
+                <p><color:red>Required*</color:red> Request body </p><br>
+                <p>Returns: (Code 200) User Updated</p><br>
+                <p>Example Value:<img src="../img/GETuserMes.jpg" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                <p>Returns: (Code 404) User not found</p><br>
+                <p>Example Value:<img src="../img/GETuserMes.jpg" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                
+            </div>
+        </div>
+
+        <div class="w3-content" style="max-width:1400px">
+            <div style="background-color: lightseagreen;">
+           <h3>DELETE /Users/{userId}</h3>
+            </div>
+            <div style="background-color:beige;">
+                <p>Description: Returns the specified user object</p><br>
+                <p>Parameters: <color:red>Required*</color:red> userId of the user you are trying to delete </p><br>
+                <p>Responses: (Code 204) User deleted</p><br>
+                <p>Responses: (Code 404) User not found</p><br>
+                <p>Example Value:<img src="../img/GETuserMes.jpg" alt="example" style="max-width:288px" style="max-height: 150px"></p><br>
+                
+            </div>
+        </div>
+    </body>
+</html>
