@@ -9,7 +9,13 @@ const user:any[]=[];
 usersRoute.get('/',(req,res,next)=>{
     req.body
     res.send("Hello from Users")
-})
+});
+
+usersRoute.post('/',(req,res,next)=>{
+    let filePath = path.join(process.cwd(),'src','htmlhidden','postUser.html');
+    let readHTMLTemplate = fs.readFileSync(filePath).toString();
+    res.sendStatus
+});
 
 usersRoute.get('/:userId',(req,res,next)=>{
     res.send(`Hello from Books:${req.params.userId}`);

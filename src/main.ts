@@ -7,7 +7,8 @@ import path from 'path';
 
 let app = express();
 app.use(express.json()); //new body parser
-
+app.use(express.urlencoded({extended:false}));
+app.use(express.static(path.join(process.cwd(),'src','html')));
 app.use('/Users', usersRoute);
 
 
@@ -19,8 +20,3 @@ app.get('/',(req,res,next)=>{
 });
 
 app.listen(3000);
-
-
-    //console.log(readHTMLTemplate);
-    //res.send(readHTMLTemplate.replace('<NAMEHERE>',req.body.name));
-
